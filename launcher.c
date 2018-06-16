@@ -33,9 +33,6 @@
 
 #pragma comment (lib, "Shlwapi.lib")
 
-#define APPENDED_ARCHIVE
-#define USE_ENVIRONMENT
-
 #define MSGSIZE 1024
 
 #if !defined(APPENDED_ARCHIVE)
