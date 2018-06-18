@@ -491,7 +491,7 @@ process(int argc, char * argv[])
 
 #if !defined(APPENDED_ARCHIVE)
     /* Replace the .exe with -script.py(w) */
-    wp = wcsstr(psp, L".exe");
+    wp = StrStrIW(psp, L".exe");
     assert(wp != NULL, "Failed to find \".exe\" in executable name");
 
     len = MAX_PATH - (wp - script_path);
